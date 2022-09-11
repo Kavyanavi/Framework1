@@ -34,7 +34,7 @@ public class BaseClass {
 			int status=res.getStatus();
 			String name=res.getName();
 			
-			if(status==2)
+			if(status==2)  //status=2 represents the failed test case
 			{
 				Screenshot s=new Screenshot();
 				s.getPhoto(driver, name);

@@ -17,7 +17,7 @@ public class Screenshot {
 		String currentDate=d.toString().replaceAll(":","-");
 		TakesScreenshot ts=(TakesScreenshot)driver;
 		File src=ts.getScreenshotAs(OutputType.FILE);
-		File dest=new File(AutoConstant.photoPth+currentDate+name+".png");
+		File dest=new File(AutoConstant.photoPath+currentDate+name+".png");
 		FileUtils.copyFile(src,dest);
 	}
 }
